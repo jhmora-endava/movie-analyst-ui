@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    stages {
+        stage ('Build'){
+            steps {
+                echo 'Building UI'
+                sh 'npm install'
+            }
+        }
+        stage ('Test'){
+            steps {
+                echo 'Testing'
+                echo 'No tests configured yet!'
+            }
+        }
+    }
+}
